@@ -218,7 +218,7 @@ body {
 
 footer {
   background: rgb(0, 0, 0, 0.3);
-	background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%);
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%);
 	backdrop-filter: blur(15px);
 }
 
@@ -243,4 +243,18 @@ footer a.social i {
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+/* Version that works for buttons in Safari. Only needed for buttons, other elements work just fine */
+.safari-fix {
+  /* Using flex here to align the child pseudo element */
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: none;
+  color: transparent;
+  text-decoration: none;
+  line-height: 40px;
+  margin-top: 12px;
 }
